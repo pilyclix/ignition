@@ -1,0 +1,430 @@
+$orange: #eb844d;
+$blue: #8dc0fc;
+$yellow: #ddc856;
+$light: white;
+$dark: black;
+$hover: #969696;
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: $light;
+  background-color: $dark;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: "Paytone One", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  transition: color 500ms;
+}
+
+a:hover {
+  color: $hover;
+}
+p {
+  font-size: 13px;
+  line-height: 177%;
+  color: $light;
+}
+
+.banner {
+  background-image: url(../resources/img-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 90%;
+  height: 600px;
+  margin-top: 100px;
+}
+/* animacion scroll down*/
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid white;
+  position: absolute;
+  left: 50%;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid white;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+/******/
+.bannerdirectores {
+  background-image: url(../resources/img-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 40%;
+  height: 750px;
+  margin-top: 100px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 15px;
+  background-color: #000000d1;
+  border-bottom: solid rgb(48, 48, 48) 1px;
+  z-index: 1;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  max-width: 2500px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  font-size: 0; /* truco por el uso de inline-block*/
+}
+li {
+  display: inline-block;
+}
+ul ul {
+  position: absolute;
+  display: none;
+}
+ul ul li {
+  display: block;
+  background-color: black;
+  padding: 15px;
+  border: solid rgb(48, 48, 48) 1px;
+}
+ul li:hover ul {
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+}
+nav img {
+  margin-right: 5px;
+  vertical-align: baseline;
+}
+nav a {
+  padding-left: 50px;
+}
+/* section {
+  padding: 0 20%;
+} */
+
+h1 {
+  font-family: "Paytone One", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $light;
+  margin-bottom: 5%;
+}
+
+h2 {
+  font-family: "Paytone One", sans-serif;
+  font-size: 25px;
+  line-height: 28px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  width: 100%;
+}
+
+h5 {
+  color: #000;
+  font-size: 13px;
+  line-height: 177%;
+  font-weight: normal;
+  margin: inherit;
+}
+
+.hero {
+  margin: 150px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  text-align: center;
+}
+
+.video {
+  margin-top: 10%;
+}
+
+iframe {
+  width: 40em;
+  height: 30em;
+}
+.modal-content {
+  margin-top: 2%;
+  width: 40.2em;
+  height: 34em;
+}
+.modal-body {
+  padding: 0;
+}
+
+.btn-close {
+  background: url(../resources/icon/close.svg) no-repeat;
+  width: 25px;
+  height: 25px;
+  opacity: 1;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.bg {
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.astronauta {
+  animation-name: float;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.interstellar {
+  background-image: url(../resources/bg-interstellar.png);
+}
+
+.prometheus {
+  background-image: url(../resources/bg-prometheus.png);
+}
+
+.martian {
+  background-image: url(../resources/bg-martian.png);
+}
+
+.interstellar,
+.prometheus,
+.martian {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.pelicula {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+}
+
+.label {
+  position: inherit;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.label img {
+  padding: 5px;
+}
+
+.naranjo {
+  background-color: $orange;
+}
+.azul {
+  background-color: $blue;
+}
+
+.amarillo {
+  background-color: $yellow;
+}
+
+.informacion {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.informacion li {
+  display: flex;
+  align-items: center;
+}
+
+.informacion li img {
+  margin-right: 10px;
+}
+.directores {
+  display: grid;
+  grid-template-rows: 20% 90%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "h2 h2"
+    "ridley nolan";
+  margin: 10%;
+}
+
+.directores h2 {
+  grid-area: h2;
+}
+.directores .ridley {
+  grid-area: ridley;
+}
+.directores .nolan {
+  grid-area: nolan;
+}
+.ridley {
+  padding-right: 10%;
+}
+
+.nolan {
+  border-left: solid rgb(255 255 255 / 38%) 1px;
+  padding-left: 5%;
+}
+
+.botonera {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.botonera__btn {
+  padding: 10px;
+  width: 13rem;
+  text-align: center;
+  border: 1px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  color: white !important;
+  background-color: #000;
+}
+.botonera__btn img {
+  width: 15px;
+}
+.botonera__btn a {
+  margin-left: 5px;
+}
+
+.botonera__btn--orange {
+  border-color: $orange !important;
+}
+.botonera__btn--orange a:hover {
+  color: $orange !important;
+}
+
+.botonera__btn--blue {
+  border-color: $blue !important;
+}
+.botonera__btn--blue a:hover {
+  color: $blue !important;
+}
+
+.botonera__btn--yellow {
+  border-color: $yellow !important;
+}
+
+.botonera__btn--yellow a:hover {
+  color: $yellow !important;
+}
+
+.modal-content {
+  background-color: black;
+  border: 1px solid rgb(178 178 178 / 20%);
+}
+
+footer {
+  display: flex;
+  padding: 2% 20%;
+  border-top: solid 1px #414141;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .logo {
+  width: 15%;
+}
+
+footer .form {
+  width: 60%;
+}
+
+footer .ssmm {
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+}
+footer .ssmm img {
+  margin: 10%;
+}
