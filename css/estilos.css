@@ -118,7 +118,7 @@ header {
   z-index: 1;
 }
 
-.contenedor {
+.container {
   display: flex;
   flex-direction: column;
   max-width: 2500px;
