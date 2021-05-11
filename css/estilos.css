@@ -91,11 +91,11 @@ section {
 }
 /******/
 .bannerdirectores {
-  background-image: url(../resources/img-header.jpg);
+  background-image: url(resources/img-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 40%;
-  height: 750px;
+  display: flex;
+  flex-direction: column;
   margin-top: 100px;
 }
 
@@ -335,32 +335,12 @@ iframe {
 }
 
 .directores {
-  display: grid;
-  grid-template-rows: 20% 90%;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "h2 h2" "ridley nolan";
-  margin: 10%;
+  display: flex;
+  flex-direction: column;
 }
 
-.directores h2 {
-  grid-area: h2;
-}
-
-.directores .ridley {
-  grid-area: ridley;
-}
-
-.directores .nolan {
-  grid-area: nolan;
-}
-
-.ridley {
-  padding-right: 10%;
-}
-
-.nolan {
-  border-left: solid rgba(255, 255, 255, 0.38) 1px;
-  padding-left: 5%;
+.directores .imagen {
+  width: 50%;
 }
 
 .botonera {
