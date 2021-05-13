@@ -52,30 +52,38 @@
       content="Colección de astronautas de la pantalla grande"
     />
 
-    <title>Ignition</title>
+    <title>Ignition: Colección de astronautas de la pantalla grande</title>
   </head>
 
   <body>
     <header>
-      <img width="196px" src="resources/ignition.svg" alt="Ignition" />
+      <a href="index.html">
+        <img alt="ignition" src="resources/logo-ignition.svg" alt="Ignition"
+      /></a>
       <nav>
         <ul>
           <li>
-            <a> <img src="resources/peliculas.svg" /> Peliculas</a>
+            <a><img alt="film" src="resources/icon-film.svg" /> Películas</a>
             <ul>
-              <li><a href="#martian">The marthian</a></li>
-              <li><a href="#interstellar">Interstellar</a></li>
-              <li><a href="#prometheus">Prometheus</a></li>
+              <li><a href="index.htm#martian">The marthian</a></li>
+              <li><a href="index.htm#interstellar">Interstellar</a></li>
+              <li><a href="index.htm#prometheus">Prometheus</a></li>
             </ul>
           </li>
           <li>
             <a href="directores.html"
-              ><img src="resources/directores.svg" />Directores</a
+              ><img
+                alt="Directores"
+                src="resources/icon-director.svg"
+              />Directores</a
             >
           </li>
           <li>
             <a href="newsletter.html"
-              ><img src="resources/newsletter.svg" />Newsletter</a
+              ><img
+                alt="Newsletter"
+                src="resources/icon-mail.svg"
+              />Newsletter</a
             >
           </li>
         </ul>
@@ -106,8 +114,10 @@
             <h2>The Martian</h2>
 
             <div class="label naranjo">
-              <img src="resources/icon/movie.svg" /> 20th Century Fox - 2015
-              <img src="resources/icon/time.svg" /> 120 min
+              <img alt="Estudio" src="resources/icon-movie.svg" /> 20th Century
+              Fox - 2015
+              <img alt="Duracion pelicula" src="resources/icon-time.svg" />120
+              min
             </div>
             <div>
               <p>
@@ -129,10 +139,18 @@
 
             <div class="informacion">
               <li>
-                <img src="resources/icon/astronautanar.svg" />6 tripulantes
+                <img alt="6 tripulantes" src="resources/ora-astro.svg" />6
+                tripulantes
               </li>
-              <li><img src="resources/icon/planet1.svg" />Martes</li>
-              <li><img src="resources/icon/nave.svg" />Hermes</li>
+              <li>
+                <img alt="planeta marte" src="resources/ora-planet.svg" />Martes
+              </li>
+              <li>
+                <img
+                  alt="nave espacial hermes"
+                  src="resources/ora-ship.svg"
+                />Hermes
+              </li>
             </div>
             <div class="botonera">
               <button
@@ -141,28 +159,44 @@
                 data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop-martian"
               >
-                <img src="resources/btn/icon/eye.svg" />
+                <img alt="ver trailer" src="resources/icon-trailer.svg" />
                 <a>Ver trailer</a>
               </button>
               <div class="botonera__btn botonera__btn--orange">
-                <img src="resources/btn/icon/share.svg" />
+                <img
+                  alt="comparte en tus redes sociales"
+                  src="resources/icon-share.svg"
+                />
                 <a>Compartir</a>
               </div>
             </div>
           </div>
 
-          <div class="astronauta">
-            <img class="mx-auto d-block" src="resources/martian.png" />
+          <div class="astronaut">
+            <img
+              class="mx-auto d-block"
+              alt="Mark Watne tripulante de hermes"
+              src="resources/as-martian.png"
+            />
           </div>
         </section>
 
         <section id="interstellar" class="bg interstellar">
-          <img class="astronauta" src="resources/cooper.png" />
+          <img
+            class="astronaut"
+            alt="Cooper tripulante del endurance"
+            src="resources/as-cooper.png"
+          />
           <div class="pelicula">
             <h2>interstellar</h2>
             <div class="label azul">
-              <img src="resources/icon/movie.svg" /> Warner Bros. Pictures -
-              2014 <img src="resources/icon/time.svg" /> 144 min
+              <img alt="Estudio" src="resources/icon-movie.svg" /> Warner Bros.
+              Pictures - 2014
+              <img
+                alt="duracion de la pelicula"
+                src="resources/icon-time.svg"
+              />
+              144 min
             </div>
             <p>
               Ambientada en un futuro distópico donde la humanidad está luchando
@@ -176,9 +210,22 @@
             </h3>
 
             <div class="informacion">
-              <li><img src="resources/icon/astronauta.svg" />6 tripulantes</li>
-              <li><img src="resources/icon/galaxia.svg" />Gargantua</li>
-              <li><img src="resources/icon/nave-1.svg" />Endurance</li>
+              <li>
+                <img alt="6 tripulantes" src="resources/blu-astro.svg" />6
+                tripulantes
+              </li>
+              <li>
+                <img
+                  alt="Viaje a gargantua"
+                  src="resources/blu-galaxy.svg"
+                />Gargantua
+              </li>
+              <li>
+                <img
+                  alt="estacion espacial endurance"
+                  src="resources/blu-ship.svg"
+                />Endurance
+              </li>
             </div>
             <div class="botonera">
               <button
@@ -187,12 +234,15 @@
                 data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop-inter"
               >
-                <img src="resources/btn/icon/eye.svg" />
+                <img alt="ver trailer" src="resources/icon-trailer.svg" />
                 <a>Ver trailer</a>
               </button>
 
               <div class="botonera__btn botonera__btn--blue">
-                <img src="resources/btn/icon/share.svg" />
+                <img
+                  alt="Comparte en tus redes sociales"
+                  src="resources/icon-share.svg"
+                />
                 <a>Compartir</a>
               </div>
             </div>
@@ -204,8 +254,13 @@
             <div>
               <h2>Prometeus</h2>
               <div class="label amarillo">
-                <img src="resources/icon/movie.svg" /> 20th Century Fox - 2012
-                <img src="resources/icon/time.svg" /> 122 min
+                <img alt="estudio" src="resources/icon-movie.svg" /> 20th
+                Century Fox - 2012
+                <img
+                  alt="duracion de la pelicula"
+                  src="resources/icon-time.svg"
+                />
+                122 min
               </div>
               <p>
                 La película es protagonizada por Noomi Rapace, Michael
@@ -222,13 +277,22 @@
 
             <div class="informacion">
               <li>
-                <img src="resources/icon/astronauta-1.svg" />8 tripulantes
+                <img alt="8 tripulantes" src="resources/yell-astro.svg" />8
+                tripulantes
               </li>
               <li>
-                <img src="resources/icon/galaxia-1.svg" />
+                <img
+                  alt="viaje al planeta LV-223"
+                  src="resources/yell-galaxy.svg"
+                />
                 LV - 223
               </li>
-              <li><img src="resources/icon/nave-2.svg" />Prometheus</li>
+              <li>
+                <img
+                  alt="Nave espacial prometheus"
+                  src="resources/yell-ship.svg"
+                />Prometheus
+              </li>
             </div>
             <div class="botonera">
               <button
@@ -237,18 +301,24 @@
                 data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop-prom"
               >
-                <img src="resources/btn/icon/eye.svg" />
+                <img alt="ver trailer" src="resources/icon-trailer.svg" />
                 <a>Ver trailer</a>
               </button>
 
               <div class="botonera__btn botonera__btn--yellow">
-                <img src="resources/btn/icon/share.svg" />
+                <img
+                  alt="comparte en tus redes sociales"
+                  src="resources/icon-share.svg"
+                />
                 <a>Compartir</a>
               </div>
             </div>
           </div>
-          <div class="astronauta">
-            <img src="resources/prometheus.png" />
+          <div class="astronaut">
+            <img
+              alt="Elizabeth Shaw tripulante de prometheus"
+              src="resources/as-prometheus.png"
+            />
           </div>
         </section>
       </div>
@@ -356,7 +426,7 @@
 
     <!------fin modal-->
     <footer>
-      <img class="logo" src="resources/ignition 2.svg" />
+      <img alt="Ignition" class="logo" src="resources/logo-ignition2.svg" />
       <div class="form">
         <h3>Incríbete a nuestro newsletter</h3>
         <form>
@@ -376,9 +446,9 @@
         </form>
       </div>
       <div class="ssmm">
-        <img src="resources/twitter 1.svg" />
-        <img src="resources/instagram 2.svg" />
-        <img src="resources/facebook (1) 1.svg" />
+        <img alt="Siguenos en twitter" src="resources/icon-twitter.svg" />
+        <img alt="Siguenos en instagram" src="resources/icon-instagram.svg" />
+        <img alt="Siguenos en facebook" src="resources/icon-facebook.svg" />
       </div>
     </footer>
 

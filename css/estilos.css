@@ -1,7 +1,13 @@
+/*colors*/
+/*logo*/
+/*img bg*/
+/*icon nav*/
+/*icon body*/
 body {
   font-family: "Open Sans", sans-serif;
   color: white;
   background-color: black;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -24,8 +30,13 @@ p {
   color: white;
 }
 
+a img {
+  margin-right: 5px;
+  vertical-align: baseline;
+}
+
 .banner {
-  background-image: url(../resources/img-header.jpg);
+  background-image: url(../resources/bg-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 90%;
@@ -40,6 +51,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5%;
 }
 
 .scroll-down {
@@ -89,20 +101,6 @@ section {
     opacity: 0;
   }
 }
-/******/
-.bannerdirectores {
-  background-image: url(resources/img-header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 header {
   width: 100%;
   position: fixed;
@@ -133,7 +131,8 @@ ul {
 }
 
 li {
-  display: inline-block;
+  display: inline-flex;
+  border: 0;
 }
 
 ul ul {
@@ -155,11 +154,6 @@ ul li:hover ul {
 nav {
   display: flex;
   justify-content: right;
-}
-
-nav img {
-  margin-right: 5px;
-  vertical-align: baseline;
 }
 
 nav a {
@@ -206,6 +200,10 @@ h5 {
   margin: inherit;
 }
 
+.title {
+  padding-top: 10%;
+}
+
 .hero {
   margin: 150px auto 0 auto;
   display: flex;
@@ -234,7 +232,7 @@ iframe {
 }
 
 .btn-close {
-  background: url(../resources/icon/close.svg) no-repeat;
+  background-image: url(../resources/icon-close.svg) no-repeat;
   width: 25px;
   height: 25px;
   opacity: 1;
@@ -250,7 +248,7 @@ iframe {
   background-position-y: center;
 }
 
-.astronauta {
+.astronaut {
   animation-name: float;
   animation: float 6s ease-in-out infinite;
 }
@@ -278,12 +276,21 @@ iframe {
   background-image: url(../resources/bg-martian.png);
 }
 
+.nolan {
+  background-image: url(../resources/bg-nolan.png);
+}
+
+.scott {
+  background-image: url(../resources/bg-scott.png);
+}
+
 .interstellar,
 .prometheus,
-.martian {
+.martian,
+.nolan,
+.scott {
   display: flex;
   justify-content: center;
-  padding-top: 5rem;
 }
 
 .pelicula {
@@ -302,7 +309,17 @@ iframe {
 }
 
 .label img {
+  width: 25px;
+  height: 25px;
   padding: 5px;
+  background-repeat: no-repeat;
+}
+
+.label img .movie {
+  background-image: url(../resources/icon-movie.svg);
+}
+.label img .time {
+  background-image: url(../resources/icon-time.svg);
 }
 
 .naranjo {
@@ -332,15 +349,6 @@ iframe {
 
 .informacion li img {
   margin-right: 10px;
-}
-
-.directores {
-  display: flex;
-  flex-direction: column;
-}
-
-.directores .imagen {
-  width: 50%;
 }
 
 .botonera {

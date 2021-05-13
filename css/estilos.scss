@@ -1,18 +1,41 @@
+/*colors*/
 $orange: #eb844d;
 $blue: #8dc0fc;
 $yellow: #ddc856;
 $light: white;
 $dark: black;
 $hover: #969696;
+/*logo*/
+$ignition: url(../resources/logo-ignition.svg);
+
+/*img bg*/
+$bgheader: url(../resources/bg-header.jpg);
+$bginterstellar: url(../resources/bg-interstellar.png);
+$bgmartian: url(../resources/bg-martian.png);
+$bgprometheus: url(../resources/bg-prometheus.png);
+$bgscott: url(../resources/bg-scott.png);
+$bgnolan: url(../resources/bg-nolan.png);
+
+/*icon nav*/
+$film: url(../resources/icon-film.svg);
+$director: url(../resources/icon-director.svg);
+$mail: url(../resources/icon-mail.svg);
+
+/*icon body*/
+$movie: url(../resources/icon-movie.svg);
+$time: url(../resources/icon-time.svg);
+$trailer: url(../resources/icon-trailer.svg);
+$close: url(../resources/icon-close.svg);
 
 body {
   font-family: "Open Sans", sans-serif;
   color: $light;
   background-color: $dark;
+  scroll-behavior: smooth;
 }
 
 a {
-  color: white;
+  color: $light;
   text-decoration: none;
   font-family: "Paytone One", sans-serif;
   font-size: 13px;
@@ -29,15 +52,20 @@ p {
   line-height: 177%;
   color: $light;
 }
+a img {
+  margin-right: 5px;
+  vertical-align: baseline;
+}
 
 .banner {
-  background-image: url(../resources/img-header.jpg);
+  background-image: $bgheader;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 90%;
   height: 600px;
   margin-top: 100px;
 }
+
 /* animacion scroll down*/
 section {
   min-height: 100vh;
@@ -45,6 +73,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5%;
 }
 
 .scroll-down {
@@ -92,18 +121,6 @@ section {
     opacity: 0;
   }
 }
-/******/
-.bannerdirectores {
-  background-image: url(resources/img-header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-}
-html {
-  scroll-behavior: smooth;
-}
 
 header {
   width: 100%;
@@ -133,7 +150,8 @@ ul {
   font-size: 0; /* truco por el uso de inline-block*/
 }
 li {
-  display: inline-block;
+  display: inline-flex;
+  border: 0;
 }
 ul ul {
   position: absolute;
@@ -153,10 +171,7 @@ nav {
   display: flex;
   justify-content: right;
 }
-nav img {
-  margin-right: 5px;
-  vertical-align: baseline;
-}
+
 nav a {
   padding-left: 50px;
 }
@@ -200,6 +215,9 @@ h5 {
   font-weight: normal;
   margin: inherit;
 }
+.title {
+  padding-top: 10%;
+}
 
 .hero {
   margin: 150px auto 0 auto;
@@ -227,7 +245,7 @@ iframe {
 }
 
 .btn-close {
-  background: url(../resources/icon/close.svg) no-repeat;
+  background-image: $close no-repeat;
   width: 25px;
   height: 25px;
   opacity: 1;
@@ -243,7 +261,7 @@ iframe {
   background-position-y: center;
 }
 
-.astronauta {
+.astronaut {
   animation-name: float;
   animation: float 6s ease-in-out infinite;
 }
@@ -260,23 +278,30 @@ iframe {
   }
 }
 .interstellar {
-  background-image: url(../resources/bg-interstellar.png);
+  background-image: $bginterstellar;
 }
 
 .prometheus {
-  background-image: url(../resources/bg-prometheus.png);
+  background-image: $bgprometheus;
 }
 
 .martian {
-  background-image: url(../resources/bg-martian.png);
+  background-image: $bgmartian;
+}
+.nolan {
+  background-image: $bgnolan;
+}
+.scott {
+  background-image: $bgscott;
 }
 
 .interstellar,
 .prometheus,
-.martian {
+.martian,
+.nolan,
+.scott {
   display: flex;
   justify-content: center;
-  padding-top: 5rem;
 }
 
 .pelicula {
@@ -294,9 +319,20 @@ iframe {
   color: black;
 }
 .label img {
+  width: 25px;
+  height: 25px;
   padding: 5px;
+  background-repeat: no-repeat;
 }
 
+.label img {
+  .movie {
+    background-image: $movie;
+  }
+  .time {
+    background-image: $time;
+  }
+}
 .naranjo {
   background-color: $orange;
 }
@@ -323,14 +359,6 @@ iframe {
 
 .informacion li img {
   margin-right: 10px;
-}
-
-.directores {
-  display: flex;
-  flex-direction: column;
-}
-.directores .imagen {
-  width: 50%;
 }
 
 .botonera {
