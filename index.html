@@ -56,40 +56,46 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <a href="index.html">
         <img alt="ignition" src="resources/logo-ignition.svg" alt="Ignition"
       /></a>
-      <nav>
-        <ul>
-          <li>
-            <a><img alt="film" src="resources/icon-film.svg" /> Películas</a>
-            <ul>
-              <li><a href="index.html#martian">The marthian</a></li>
-              <li><a href="index.html#interstellar">Interstellar</a></li>
-              <li><a href="index.html#prometheus">Prometheus</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="directores.html"
-              ><img
-                alt="Directores"
-                src="resources/icon-director.svg"
-              />Directores</a
-            >
-          </li>
-          <li>
-            <a href="newsletter.html"
-              ><img
-                alt="Newsletter"
-                src="resources/icon-mail.svg"
-              />Newsletter</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li></li>
+          <a href="index.html#martian"
+            ><img alt="film" src="resources/icon-film.svg" />The marthian</a
+          >
+        </li>
+        <li>
+          <a href="index.html#interstellar"
+            ><img alt="film" src="resources/icon-film.svg" />Interstellar</a
+          >
+        </li>
+        <li>
+          <a href="index.html#prometheus"
+            ><img alt="film" src="resources/icon-film.svg" />Prometheus</a
+          >
+        </li>
+        <li>
+          <a href="directores.html"
+            ><img
+              alt="Directores"
+              src="resources/icon-director.svg"
+            />Directores</a
+          >
+        </li>
+        <li>
+          <a href="newsletter.html"
+            ><img alt="Newsletter" src="resources/icon-mail.svg" />Newsletter</a
+          >
+        </li>
+      </ul>
     </header>
-    <div class="container-fluid">
+    <div class="container">
       <div class="banner">
         <div class="hero">
           <h1>Coleccion de astronautas de la pantalla grande</h1>
