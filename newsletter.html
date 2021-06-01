@@ -58,7 +58,7 @@
   <body>
     <header class="header">
       <a href="index.html">
-        <img alt="ignition" src="resources/logo-ignition.svg" alt="Ignition"
+        <img alt="ignition" class="logo" src="resources/logo-ignition.svg" alt="Ignition"
       /></a>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"
@@ -96,42 +96,40 @@
       </ul>
     </header>
 
-    <section class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm"></div>
-          <div class="col-10">
-            <h2>Newsletter</h2>
-            <p>
-              Incríbete a nuestro newsletter y enterate primero sobre los
-              estrenos de peliculas con astronautas
-            </p>
-            <form>
-              <div class="mb-5">
-                <label for="exampleFormControlInput1" class="form-label"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleFormControlInput1"
-                  placeholder="name@example.com"
-                />
-                <div class="botonera__btn--blue">
-                  <button type="button" class="botonera__btn botonera__btn--yellow">
-                    <a>inscribirme</a>
-                  </button>
-                </div>
-                </div>
-              </div>
-            </form>
+    <div class="container">
+      <div class="banner">
+        <!---------->
+        <div class="suscribe">
+          <div class="item_1 hide">
+            <img src="resources/saturn.png" />
           </div>
-          <div class="col-sm"></div>
+          <div class="item_2">
+            <h1>Suscríbete en nuestro newsletter</h1>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Escríbe tu email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="tumail@mail.com"
+              />
+            </div>
+            <button type="button" class="botonera__btn botonera__btn--yellow">
+              <a>inscribirme</a>
+            </button>
+          </div>
+          <div class="item_3 hide>
+            <img src="resources/planet.png" />
+          </div>
         </div>
+        <!-------->
       </div>
-    </section>
+    </div>
+
     <footer>
-      <img class="logo" src="/resources/logo-ignition2.svg" />
+      <img alt="Ignition" class="logo" src="resources/logo-ignition2.svg" />
       <div class="form">
         <h3>Incríbete a nuestro newsletter</h3>
         <form>
@@ -151,9 +149,9 @@
         </form>
       </div>
       <div class="ssmm">
-        <img src="/resources/icon-twitter.svg">
-        <img src="/resources/icon-instagram.svg" />
-        <img src="/resources/icon-facebook.svg" />
+        <img alt="Siguenos en twitter" src="resources/icon-twitter.svg" />
+        <img alt="Siguenos en instagram" src="resources/icon-instagram.svg" />
+        <img alt="Siguenos en facebook" src="resources/icon-facebook.svg" />
       </div>
     </footer>
   </body>

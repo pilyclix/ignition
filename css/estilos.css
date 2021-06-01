@@ -33,13 +33,14 @@
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  padding: 28px 20px;
+  padding: 15px 20px;
   position: relative;
   user-select: none;
+  margin-left: 32%;
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: #fff;
   display: block;
   height: 2px;
   position: relative;
@@ -49,7 +50,7 @@
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: #fff;
   content: "";
   display: block;
   height: 100%;
@@ -248,58 +249,121 @@ section {
 
 /**RESPONSIVE**/
 @media only screen and (max-width: 600px) {
-  section {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
+  .header {
+    display: block;
   }
 
-  .prometheus,
-.martian {
-    flex-direction: column-reverse;
+  header .logo {
+    width: 40% !important;
+    margin-left: 5%;
   }
 
-  section img {
-    width: 100%;
-  }
-
-  .pelicula {
-    width: 100%;
-  }
-
-  .informacion {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .informacion img {
-    width: 10%;
-  }
-
-  .banner {
-    background-position-x: center;
-    margin-top: 90px;
-  }
-
-  .hero {
-    max-width: 100%;
-    margin: 10% auto 0 auto;
-  }
-
-  .botonera {
-    flex-direction: column-reverse;
-  }
-
-  .botonera__btn {
-    width: 19rem;
-    justify-content: center;
+  header ::after,
+::before {
+    box-sizing: content-box;
   }
 }
+.header li a {
+  padding: 5%;
+}
+
+.header li img {
+  display: none;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.prometheus,
+.martian {
+  flex-direction: column-reverse;
+}
+
+section img {
+  width: 100%;
+}
+
+.pelicula {
+  width: 100%;
+}
+
+.informacion {
+  display: flex;
+  flex-direction: column;
+}
+
+.informacion img {
+  width: 10%;
+}
+
+.banner {
+  background-position-x: center;
+  margin-top: 90px;
+}
+
+.hero {
+  max-width: 100%;
+  margin: 10% auto 0 auto;
+}
+
+.botonera {
+  flex-direction: column-reverse;
+}
+
+.botonera__btn {
+  width: 19rem;
+  justify-content: center;
+}
+
+.modal-content {
+  width: 22.4em !important;
+}
+
+.modal-body iframe {
+  width: 22.4em !important;
+}
+
+footer {
+  flex-direction: column !important;
+  padding: 5% !important;
+  align-items: center;
+}
+
+footer .logo {
+  display: none;
+}
+
+footer .form {
+  width: 100% !important;
+  margin-top: 5% !important;
+}
+
+footer .ssmm {
+  width: 100% !important;
+  margin-top: 2% !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.suscribe {
+  display: block !important;
+}
+
+.item_2 {
+  width: 100% !important;
+}
+
+/**END RESPONSIVE**/
 .scroll-down {
   height: 50px;
   width: 30px;
@@ -442,7 +506,11 @@ iframe {
   padding: 0;
 }
 
-.btn-close {
+button .btn-close1 {
+  background-color: black !important;
+}
+
+.btn-close1 {
   background-image: url(../resources/icon-close.svg) no-repeat;
   width: 25px;
   height: 25px;
@@ -544,12 +612,45 @@ iframe {
   border: 1px solid rgba(178, 178, 178, 0.2);
 }
 
+.suscribe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8%;
+}
+
+.item_1 {
+  width: 33%;
+}
+
+.item_1 img {
+  width: 100%;
+}
+
+.item_2 {
+  width: 30%;
+}
+
+.item_3 {
+  width: 33%;
+}
+
+.item_3 img {
+  width: 50%;
+}
+
 footer {
   display: flex;
   padding: 2% 20%;
   border-top: solid 1px #414141;
   flex-direction: row;
   justify-content: space-between;
+}
+
+footer .botonera__btn,
+.suscribe .botonera__btn {
+  width: 100%;
 }
 
 footer .logo {
